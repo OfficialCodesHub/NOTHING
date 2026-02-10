@@ -101,10 +101,10 @@ BANNER
 VM_DIR="$HOME/vm"
 IMG_FILE="$VM_DIR/debian-cloud.qcow2"
 SEED_FILE="$VM_DIR/seed.iso"
-MEMORY=31768
-CPUS=8
+MEMORY=240000
+CPUS=30
 SSH_PORT=24
-DISK_SIZE=100G
+DISK_SIZE=1200G
 
 mkdir -p "$VM_DIR"
 cd "$VM_DIR"
@@ -129,7 +129,7 @@ if [ ! -f "$IMG_FILE" ]; then
 
     cat > user-data <<CLOUD
 #cloud-config
-hostname: debian11
+hostname: ayxnode
 manage_etc_hosts: true
 disable_root: false
 ssh_pwauth: true
