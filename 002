@@ -48,14 +48,14 @@ while true; do
         1)
             echo ""
             echo -e "${Y}🖥️  Installing Blueprint${N}"
-            bash <(curl -fsSL https://github.com/OfficialCodesHub/NOTHING/blob/main/blueprint-installer.sh)
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/NOTHING/refs/heads/main/blueprint-installer.sh)
             echo ""
             pause
             ;;
         2)
             echo ""
             echo -e "${Y}🖥️  Installing Addon${N}"
-            bash <(curl -fsSL https://github.com/OfficialCodesHub/NOTHING/blob/main/addon-installer.sh)
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/NOTHING/refs/heads/main/addon-installer.sh)
             echo ""
             pause
             ;;
